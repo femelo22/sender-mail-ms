@@ -20,6 +20,6 @@ public class EmailController {
   @PostMapping
   public ResponseEntity<String> sendMailNotification(@RequestBody Email email) {
     emailSender.sendEmail(email);
-    return ResponseEntity.ok("Email sent to " + email.to());
+    return ResponseEntity.ok("Email enviado com sucesso!");
   }
 }
